@@ -1,0 +1,150 @@
+#home {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding-top: 80px;
+    background-color: var(--light-gray);
+}
+
+.home-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+}
+
+.home-content h1 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+    line-height: 1.2;
+    color: var(--dark);
+}
+
+.home-content span {
+    color: var(--primary);
+}
+
+.home-content h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: var(--gray);
+    font-weight: 500;
+}
+
+.home-content p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    color: var(--gray);
+    max-width: 90%;
+}
+
+.button-group {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.home-social {
+    display: flex;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: var(--primary);
+    color: white;
+    font-size: 1.2rem;
+    transition: var(--transition);
+}
+
+.social-icon:hover {
+    transform: translateY(-5px);
+    background: var(--secondary);
+}
+
+.tech-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.tech-item {
+    background: white;
+    border-radius: var(--border-radius);
+    padding: 20px;
+    text-align: center;
+    transition: var(--transition);
+    box-shadow: var(--shadow);
+    border: 1px solid rgba(67, 97, 238, 0.1);
+}
+
+.tech-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.tech-icon {
+    font-size: 2.5rem;
+    color: var(--primary);
+    margin-bottom: 10px;
+}
+
+.tech-name {
+    font-weight: 600;
+    color: var(--dark);
+}
+
+@media (max-width: 992px) {
+    .home-container {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .home-content {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .home-content p {
+        max-width: 100%;
+    }
+
+    .home-social {
+        justify-content: center;
+    }
+
+    .button-group {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .home-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .button-group {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 576px) {
+    .home-content h1 {
+        font-size: 2rem;
+    }
+
+    .tech-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
