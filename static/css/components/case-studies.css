@@ -1,0 +1,44 @@
+.case-studies {
+    background-color: var(--light-gray);
+    border-radius: var(--border-radius);
+}
+
+.case-study {
+    background: white;
+    border-radius: var(--border-radius);
+    padding: 30px;
+    margin-bottom: 30px;
+    box-shadow: var(--shadow);
+    border: 1px solid rgba(67, 97, 238, 0.1);
+}
+
+.case-study h3 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: var(--primary);
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgba(67, 97, 238, 0.1);
+}
+
+.case-content h4 {
+    font-size: 1.3rem;
+    margin: 20px 0 15px;
+    color: var(--primary);
+}
+
+.case-content p {
+    color: var(--gray);
+    margin-bottom: 15px;
+    line-height: 1.7;
+}
+
+.case-content ul {
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+.case-content li {
+    color: var(--gray);
+    margin-bottom: 8px;
+    line-height: 1.7;
+}
